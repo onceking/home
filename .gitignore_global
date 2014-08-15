@@ -1,0 +1,11 @@
+*.lock
+*~
+*.o
+*.pyc
+tmp/
+a.out
+gmon.out
+perf.data
+perf.data.old
+
+.emacs.desktop

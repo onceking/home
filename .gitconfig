@@ -1,0 +1,22 @@
+[core]
+        excludesfile = ~/.gitignore_global
+        editor = emacs --no-desktop
+[tig]
+        main-view = date:default author id:yes commit-title:graph=yes,refs=yes
+        commit-order = topo
+        vertical-split = false
+        line-graphics = utf-8
+
+[tig "bind"]
+        status = A !git commit --amend
+        stage = A !git commit --amend
+
+[rerere]
+        enabled = true
+
+[rebase]
+        autosquash = true
+
+[filter "tabspace4"]
+        clean = expand --tabs=4 --initial
+        smudge = unexpand --tabs=4 --first-only
