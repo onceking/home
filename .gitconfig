@@ -3,6 +3,7 @@
         editor = emacs --no-desktop
 [tig]
         main-view = date:default author id:yes commit-title:graph=yes,refs=yes
+        show-id = true
         commit-order = topo
         vertical-split = false
         line-graphics = utf-8
