@@ -1,26 +1,26 @@
 [core]
-        excludesfile = ~/.gitignore_global
-        editor = emacs --no-desktop
+	excludesfile = ~/.gitignore_global
+	editor = emacs --no-desktop
 [tig]
-        main-view = date:default author id:yes commit-title:graph=yes,refs=yes
-        show-id = true
-        commit-order = topo
-        vertical-split = false
-        line-graphics = utf-8
-        refresh-mode = after-command
+	main-view = date:default author id:yes commit-title:graph=yes,refs=yes
+	show-id = true
+	commit-order = topo
+	vertical-split = false
+	line-graphics = utf-8
+	refresh-mode = after-command
 
 [tig "bind"]
-        status = A !git commit --amend
-        stage = A !git commit --amend
-        stage = C !git commit
-        status = _ !?rm -fv %(file)
+	status = A !git commit --amend
+	stage = A !git commit --amend
+	stage = C !git commit
+	status = _ !?rm -fv %(file)
 
 [rerere]
-        enabled = true
+	enabled = true
 
 [rebase]
-        autosquash = true
+	autosquash = true
 
 [filter "tabspace4"]
-        clean = expand --tabs=4 --initial
-        smudge = unexpand --tabs=4 --first-only
+	clean = expand --tabs=4 --initial
+	smudge = unexpand --tabs=4 --first-only
