@@ -16,6 +16,7 @@
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
 (require `linum)
+(setq linum-format "%d ")
 (column-number-mode 1)
 (display-battery-mode 0)
 (display-time-mode 0)
