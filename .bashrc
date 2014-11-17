@@ -13,3 +13,5 @@ alias cp='cp -i'
 alias du='du -h'
 alias df='df -h'
 alias top='top -c'
+
+export SSL_CERT_FILE=/etc/ssl/certs/ca-certificates.crt
