@@ -7,6 +7,7 @@
         commit-order = topo
         vertical-split = false
         line-graphics = utf-8
+        refresh-mode = after-command
 
 [tig "bind"]
         status = A !git commit --amend
