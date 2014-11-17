@@ -1,11 +1,22 @@
+# temp
 *.lock
-*~
-*.o
-*.pyc
 tmp/
+*.bak
+
+# history
+*.log
+.*_history
+
+# Python
+*.pyc
+
+# C
+*.o
 a.out
 gmon.out
 perf.data
 perf.data.old
 
+# emacs
 .emacs.desktop
+*~

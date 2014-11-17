@@ -1,48 +1,38 @@
-/.CFUserTextEncoding
-/.emacs.d/auto-save-list/
-/.emacs.d/history
-/.bash_history
-/.keepassx/
-/.ssh/
-/.viminfo
-/Desktop/
-/Documents/
-/Downloads/
-/Library/
-/Movies/
-/Music/
-/Pictures/
-/Public/
+# chef
+.berkshelf/
+.chef/
 
+# ruby
+.bundle/
+.byebug_hist
+.irbrc
 
-/.Xauthority
-/.adobe/
-/.bash_history.sqlite3
-/.bash_logout
-/.bash_profile
-/.byebug_hist
-/.cache/
-/.config/
-/.debug/
-/.gnome/
-/.gstreamer*/
-/.ido.last
-/.lesshst
-/.local/
-/.macromedia/
-/.mozilla/
-/.mplayer/
-/.mpv/
-/.pgadmin3
-/.pgadmin_histoqueries
-/.pgpass
-/.pki/
-/.qws/
-/.sqlite_history
-/.subversion/
-/.swt/
-/.wine/
-/.xscreensaver
-/.xsession-errors
-/sjp/
-/pgadmin.log
+# bash
+.bash_history.sqlite3
+.bash_logout
+.bash_profile
+
+# cache
+.cache/
+
+# emacs
+.emacs.d/
+.ido.last
+
+# applications
+.*/
+.lesshst
+.p7zip
+.pgadmin3
+.pgadmin_histoqueries
+.pgpass
+
+.rnd
+
+# desktop
+.Xauthority
+.xscreensaver
+.xsession-errors
+Calibre Library/
+Desktop/
+Downloads/
