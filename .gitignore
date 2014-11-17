@@ -26,8 +26,8 @@
 .pgadmin3
 .pgadmin_histoqueries
 .pgpass
-
 .rnd
+.viminfo
 
 # desktop
 .Xauthority
