@@ -1,6 +1,10 @@
 [core]
 	excludesfile = ~/.gitignore_global
 	editor = emacs --no-desktop
+
+[alias]
+	ls-ignored = ls-files --others -i --exclude-standard
+
 [tig]
 	main-view = date:default author id:yes commit-title:graph=yes,refs=yes
 	show-id = true
