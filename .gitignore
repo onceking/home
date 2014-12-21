@@ -30,6 +30,8 @@
 .viminfo
 
 # desktop
+.esd_auth
+.ICEauthority
 .Xauthority
 .xscreensaver
 .xsession-errors
