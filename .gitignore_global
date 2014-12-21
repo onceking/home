@@ -20,3 +20,6 @@ perf.data.old
 # emacs
 .emacs.desktop
 *~
+
+# ruby
+!Gemfile.lock
