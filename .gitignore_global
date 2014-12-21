@@ -11,7 +11,9 @@ tmp/
 *.pyc
 
 # C
+*.a
 *.o
+*.so
 a.out
 gmon.out
 perf.data
