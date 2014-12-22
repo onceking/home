@@ -14,6 +14,7 @@ alias df='df -h'
 alias top='top -c'
 alias ls='ls --color'
 
+export CCACHE_DIR="$HOME/.cache/ccache"
 export SSL_CERT_FILE=/etc/ssl/certs/ca-certificates.crt
 
 export PS1='[\u@\h \W]\$ '
