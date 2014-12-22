@@ -4,7 +4,6 @@
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
-PS1='[\u@\h \W]\$ '
 
 alias mv='mv -i'
 alias mvit='mv -vit'
@@ -17,6 +16,22 @@ alias ls='ls --color'
 
 export SSL_CERT_FILE=/etc/ssl/certs/ca-certificates.crt
 
+export PS1='[\u@\h \W]\$ '
+for i in /usr/share/git-core/contrib/completion/git-prompt.sh \
+	     /usr/share/git/completion/git-prompt.sh
+do
+    if [ -e "$i" ]
+    then
+	source "$i"
+	export GIT_PS1_SHOWCOLORHINTS=1
+	export GIT_PS1_SHOWDIRTYSTATE=1     # *
+	export GIT_PS1_SHOWUNTRACKEDFILES=1 # %
+	export GIT_PS1_SHOWUPSTREAM=auto    # <=>
+	export PROMPT_COMMAND='__git_ps1 "[\u@\h] \w" "\\\$ "'
+
+	break
+    fi
+done
 
 envfile="$HOME/.gnupg/gpg-agent.env"
 if [[ -e "$envfile" ]] && kill -0 $(grep GPG_AGENT_INFO "$envfile" | cut -d: -f 2) 2>/dev/null; then
