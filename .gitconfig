@@ -2,6 +2,9 @@
 	excludesfile = ~/.gitignore_global
 	editor = emacs --no-desktop
 
+[push]
+	default = simple
+
 [alias]
 	ls-ignored = ls-files --others -i --exclude-standard
 
@@ -15,6 +18,7 @@
 
 [tig "bind"]
 	generic = A !git commit --amend
+	generic = P !git push
 	stage = C !git commit
 	status = _ !?rm -fv %(file)
 
