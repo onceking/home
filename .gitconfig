@@ -14,8 +14,7 @@
 	refresh-mode = after-command
 
 [tig "bind"]
-	status = A !git commit --amend
-	stage = A !git commit --amend
+	generic = A !git commit --amend
 	stage = C !git commit
 	status = _ !?rm -fv %(file)
 
