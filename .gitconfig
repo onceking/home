@@ -19,6 +19,8 @@
 [tig "bind"]
 	generic = A !git commit --amend
 	generic = P !git push
+	main    = F !git fetch --verbose --all
+	generic = F !git fetch --verbose --all
 	stage = C !git commit
 	status = _ !?rm -fv %(file)
 
