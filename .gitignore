@@ -6,6 +6,7 @@
 .bundle/
 .byebug_hist
 .irbrc
+src/
 
 # bash
 .bash_history.sqlite3
