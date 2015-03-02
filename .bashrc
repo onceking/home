@@ -16,6 +16,7 @@ alias ls='ls --color'
 
 export CCACHE_DIR="$HOME/.cache/ccache"
 export SSL_CERT_FILE=/etc/ssl/certs/ca-certificates.crt
+export EDITOR='emacs --no-desktop'
 
 export PS1='[\u@\h \W]\$ '
 for i in /usr/share/git-core/contrib/completion/git-prompt.sh \
