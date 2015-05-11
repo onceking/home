@@ -17,7 +17,6 @@
 (setq whitespace-style '(face empty tabs lines-tail trailing))
 (global-whitespace-mode t)
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
-(setq require-final-newline 0)
 
 (require `linum)
 (setq linum-format "%d ")
