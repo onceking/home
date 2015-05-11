@@ -12,7 +12,7 @@ alias cp='cp -i'
 alias du='du -h'
 alias df='df -h'
 alias top='top -c'
-alias ls='ls --color'
+alias ls='ls --color=auto'
 
 export CCACHE_DIR="$HOME/.cache/ccache"
 export EDITOR='emacs --no-desktop'
