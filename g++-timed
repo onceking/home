@@ -1,0 +1,25 @@
+#! /bin/sh
+t=$(date +%s)
+g++.original "$@"
+rc=$?
+
+last=""
+out=""
+for i in $@
+do
+  if [ "$last" = "-o" ]
+  then
+    out="$i"
+  fi
+
+  last=$i
+done
+
+if [ "$out" = "" ]
+then
+  out=$(echo $@|tr ' ' '\n'|tail -1)
+fi
+
+printf '%03d %s\n' $(($(date +%s) - $t)) $out
+
+exit $rc
