@@ -5,6 +5,10 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+HISTTIMEFORMAT="%d/%m/%y %T "
+HISTSIZE=100
+HISTFILESIZE=-1
+
 alias mv='mv -i'
 alias mvit='mv -vit'
 alias rm='rm -i'
