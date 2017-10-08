@@ -17,25 +17,25 @@ alias ls='ls --color=auto'
 export CCACHE_DIR="$HOME/.cache/ccache"
 export EDITOR='emacs --no-desktop'
 for i in /etc/ssl/certs/ca-bundle.crt \
-	     /etc/ssl/certs/ca-certificates.crt
+             /etc/ssl/certs/ca-certificates.crt
 do
     [ -e "$i" ] && export SSL_CERT_FILE="$i"
 done
 
 export PS1='[\u@\h \W]\$ '
 for i in /usr/share/git-core/contrib/completion/git-prompt.sh \
-	     /usr/share/git/completion/git-prompt.sh
+             /usr/share/git/completion/git-prompt.sh
 do
     if [ -e "$i" ]
     then
-	source "$i"
-	export GIT_PS1_SHOWCOLORHINTS=1
-	export GIT_PS1_SHOWDIRTYSTATE=1     # *
-	export GIT_PS1_SHOWUNTRACKEDFILES=1 # %
-	export GIT_PS1_SHOWUPSTREAM=auto    # <=>
-	export PROMPT_COMMAND='__git_ps1 "[\u@\h] \w" "\\\$ "'
+        source "$i"
+        export GIT_PS1_SHOWCOLORHINTS=1
+        export GIT_PS1_SHOWDIRTYSTATE=1     # *
+        export GIT_PS1_SHOWUNTRACKEDFILES=1 # %
+        export GIT_PS1_SHOWUPSTREAM=auto    # <=>
+        export PROMPT_COMMAND='__git_ps1 "[\u@\h] \w" "\\\$ "'
 
-	break
+        break
     fi
 done
 
