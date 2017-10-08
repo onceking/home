@@ -23,7 +23,8 @@ do
 done
 
 export PS1='[\u@\h \W]\$ '
-for i in /usr/share/git-core/contrib/completion/git-prompt.sh \
+for i in /etc/bash_completion.d/git-prompt \
+             /usr/share/git-core/contrib/completion/git-prompt.sh \
              /usr/share/git/completion/git-prompt.sh
 do
     if [ -e "$i" ]
